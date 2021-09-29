@@ -229,8 +229,8 @@ async def auto_filter(bot, update):
             print(e)
             
         if cond:
-           asyncio.sleep(20)
-           msg.delete()
+           await asyncio.sleep(20)
+           await msg.delete()
 
 
 async def gen_invite_links(db, group_id, bot, update):
